@@ -1,0 +1,16 @@
+# import library
+from ckiptagger import data_utils
+
+#注意: 此模型需2GB的儲存空間
+path_to_store = './'
+
+
+#我們可以使用提供的API從iis-ckip或gdrive-ckip進行下載
+#這裡我們使用gdrive-ckip進行下載
+
+#從iis-ckip下載
+#data_utils.download_data_url("./")
+
+
+#下載到path_to_store並解壓縮(預設下載的壓縮檔為data.zip)
+data_utils.download_data_gdown("./")
